@@ -40,4 +40,4 @@ optional arguments:
 * The program is much simpler, easer to manage, and runs in python.
 
 ###Current Status
-As of 11/23/2014, it is almost ready for a version 1.0 release. The main app is working, and most of the strips in the defs file have been checked. I still need to go through and create or update classes for some standalone strips, and there are still some dead ones to be weeded out.
+As of February 2016, it is officially ready to be called version 1.0. There are still some strip definitions to clean up, but all the major providers and major things are in there and have been stable for some time now. Use an enjoy! (and if you update the strips.def file, please use github to keep the master appraised of your updates).
