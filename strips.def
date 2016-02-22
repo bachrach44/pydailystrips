@@ -1,5 +1,5 @@
 # Strip Groups
-# 736 strips in this file
+# 720 strips in this file
 
 ###############################
 #these classes are good, and all their strips defined
@@ -755,10 +755,10 @@ strip dicktracy
 	useclass gocomics
 end
 #Even though it's available from gocomics, I'm taking it from dilbert.com
-#strip dilbert
-#	name Dilbert
-#	useclass gocomics
-#end
+strip dilbert
+	name Dilbert
+	useclass gocomics
+end
 strip dilbert-classics
 	name Dilbert Classics
 	useclass gocomics
@@ -2873,15 +2873,15 @@ end
 ##########
 #these have been tested and work
 ################
-strip dilbert
-	name Dilbert
-	homepage http://www.dilbert.com/
-	artist Scott Adams
-	type search
-	searchpage http://www.dilbert.com/
-	searchpattern http://dilbert.com/dyn/str_strip/.*strip\.(sunday\.)?gif
-	provides any
-end
+#strip dilbert
+#	name Dilbert
+#	homepage http://www.dilbert.com/
+#	artist Scott Adams
+#	type search
+#	searchpage http://www.dilbert.com/
+#	searchpattern http://dilbert.com/dyn/str_strip/.*strip\.(sunday\.)?gif
+#	provides any
+#end
 strip joyoftech
 	name The Joy of Tech
 	homepage http://www.joyoftech.com/joyoftech/
@@ -2947,7 +2947,8 @@ strip xkcd
 	artist Randall Munroe
 	homepage http://www.xkcd.com
 	type search
-	searchpattern http://imgs.xkcd.com/comics/.*\.png.*title.*\"
+	searchpattern //imgs.xkcd.com/comics/.*\.png.*title.*\"
+	baseurl http:
 end
 strip evilinc
 	name Evil Inc.
