@@ -8,7 +8,7 @@ class gocomics
 	homepage http://www.gocomics.com/$strip/
 	type search
 	searchpage http://www.gocomics.com/$strip/
-	searchpattern http:\/\/assets\.amuniversal\.com\/[0-9a-f]{32}
+	searchpattern https:\/\/assets\.amuniversal\.com\/[0-9a-f]{32}
 	provides any
 end
 class comicskingdom   
@@ -28,24 +28,24 @@ end
 class cagle
 	homepage http://www.cagle.com/author/$strip
 	type search
-	searchpattern http://media.caglecartoons.com/media/cartoons/\d+/\d\d\d\d/\d\d/\d\d/[\d_]+.jpg
+	searchpattern image.cagle.com/\d+\/\d+\/\d+.png
+	baseurl https://
 	provides latest
 end
 class arcamax   
 	type search
 	homepage http://www.arcamax.com/thefunnies/$strip/
 	searchpage http://www.arcamax.com/thefunnies/$strip/
-	searchpattern http:\/\/www.arcamax.com\/newspics\/\d*\/\d*/\d*\.(gif|jpg)
+	searchpattern https:\/\/www.arcamax.com\/newspics\/\d*\/\d*/\d*\.(gif|jpg)
 end
 class creators
 	type search
 	homepage http://www.creators.com/comics/$strip.html
-	searchpattern /comics/\d+/\d+_image.jpg
-	baseurl http://www.creators.com/
+	searchpattern https://cdn.alphacomedy.com/\d+/\d+/[0-9a-z_]+.jpg
 end
 class universaluclick
 	homepage http://www.universaluclick.com/comics/$strip
-	searchpattern http://assets.amuniversal.com/[0-9a-f]{32}
+	searchpattern https://assets.amuniversal.com/[0-9a-f]{32}
 	type search
 end
 #to make: keenspace, washingtonpost
@@ -2479,8 +2479,8 @@ strip loveis
 	name Love Is...
 	type search
 	homepage http://loveiscomix.com
-	searchpattern /static/loveisbnk/\d{8}\.gif
-	baseurl http://loveiscomix.com
+	searchpattern /static/libnk/\d{8}\.gif
+	baseurl https://loveiscomix.com
 end
 strip horsey
 	name David Horsey
@@ -2643,10 +2643,10 @@ strip wolvertoon
 end
 # azcentral strips
 class azcentral-srch
-	homepage http://www.azcentral.com/ent/comics/$strip.html
+	homepage http://comics.azcentral.com/slideshow?comic=$1&feature_id=$1
 	type search
-	searchpattern <img.+?SRC="(http://mst.rbma.com/content/$1)"
-	prefetch $homepage
+	searchpattern https://safr.kingfeatures.com/idn/ck3/content.php\?file=[a-zA-Z0-9]{126}==
+	#prefetch $homepage
 	provides latest
 end
 strip apt3g
